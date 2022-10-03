@@ -1,24 +1,18 @@
-# README
+#  Cryptocurrency Portfolio simple calculator
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple cryptocurrency portfolio built with the <b>backend of web services </b>, <b> MVC architecture and database migration on Ruby on rails </b> with the <b> frontend view built in React </b> with the existed recommended video help.
 
-Things you may want to cover:
+##  Deployment on Heroku  
+check the above link for the deployed site of the production-working web app
 
-* Ruby version
+##  Local Run  
 
-* System dependencies
+On the first terminal
+* Fire up the database:
+`rails db:prepare`
 
-* Configuration
+On the second terminal 
+* Start your rails server:
+`rails s`
+* Then check in your browser for local inspection at http://localhost:3000 
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
