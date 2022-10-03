@@ -4,7 +4,8 @@ class CurrenciesController < ApplicationController
     
     def search
         # compare lowercase search paramater to lowecase one in DB 
-        @currencies =  Currency.where('LOWER(name) LIKE ?',  "%#{params[:search].downcase}%")
+        # @currencies =  Currency.where('LOWER(name) LIKE ?',  "%#{params[:search].downcase}%")
+        @currencies =  Currency.where('LOWER(name) LIKE LOWER(?)',  "%#{params[:search].downcase}%")
         render json: {currencies: @currencies}
     end
     
